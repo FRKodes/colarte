@@ -36,13 +36,15 @@
 
 					<p>
 						Tel: +52 1 33 2256 7319<br>
-						Desde Estados Unidos: 01 1521 33 1864 0767<br>
+						Desde USA: 01 1521 33 1864 0767<br>
 					</p>
 
 					<p>
 						<b>Domicilio:</b> <br>
-						Independencia #368-C Colonia Los Puestos <br>
-						Tlaquepaque Jalisco México. C.P. 45638
+						Independencia #368-C <br>
+						Colonia Los Puestos <br>
+						Tlaquepaque Jalisco México. <br>
+						C.P. 45638
 					</p>
 				</div>
 

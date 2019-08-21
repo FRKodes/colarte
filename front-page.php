@@ -44,15 +44,19 @@ get_header();
 						<div class="cat-banner catalogo"></div>
 						<div class="cat-info">
 							<h2><a href="#">Catálogo</a></h2>
-							<a href="#"><span class="icon-mas"></span></a>
+							<a class="link-icon-mas" href="#"><span class="icon-mas"></span></a>
+							<p class="block-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+							<a class="link-btn-mas" href="#">Ver más</a>
 						</div>
 					</div>
 					
-					<div class="category-item">
+					<div class="category-item proyectos-item">
 						<div class="cat-banner proyectos"></div>
 						<div class="cat-info">
 							<h2><a href="#">Proyectos</a></h2>
-							<a href="#"><span class="icon-mas"></span></a>
+							<a class="link-icon-mas" href="#"><span class="icon-mas"></span></a>
+							<p class="block-desc">Voluptatibus necessitatibus neque dolores temporibus deserunt beatae, fugit.</p>
+							<a class="link-btn-mas" href="#">Ver más</a>
 						</div>
 					</div>
 					
@@ -60,7 +64,9 @@ get_header();
 						<div class="cat-banner blog"></div>
 						<div class="cat-info">
 							<h2><a href="#">Blog</a></h2>
-							<a href="#"><span class="icon-mas"></span></a>
+							<a class="link-icon-mas" href="#"><span class="icon-mas"></span></a>
+							<p class="block-desc">Repellendus similique distinctio obcaecati doloremque voluptatibus necessitatibus cum voluptate!</p>
+							<a class="link-btn-mas" href="#">Ver más</a>
 						</div>
 					</div>
 				</div>
@@ -71,11 +77,13 @@ get_header();
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
-					<h2 class="text-center m-top-40 m-bottom-20">Productos destacados</h2>
+					<h2 class="text-center m-top-80 m-bottom-40">PRODUCTOS DESTACADOS</h2>
 					<div class="productos-destacados-container">
-						<div class="item"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-colarte-header.png" alt="Logo Muebles Colarte"></a></div>
-						<div class="item"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-colarte-header.png" alt="Logo Muebles Colarte"></a></div>
-						<div class="item"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-colarte-header.png" alt="Logo Muebles Colarte"></a></div>
+						<div class="item"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/producto-silla.jpg" alt="producto silla Muebles Colarte"></a></div>
+						<div class="item"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/producto-silla.jpg" alt="producto silla Muebles Colarte"></a></div>
+						<div class="item"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/producto-silla.jpg" alt="producto silla Muebles Colarte"></a></div>
+						<div class="item"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/producto-silla.jpg" alt="producto silla Muebles Colarte"></a></div>
+						<div class="item"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/producto-silla.jpg" alt="producto silla Muebles Colarte"></a></div>
 					</div>
 				</div>
 			</div>

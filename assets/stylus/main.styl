@@ -6,11 +6,12 @@ cafe = #614e40
 	font-weight 700
 .m-top-40
 	margin-top 40px
+.m-top-80
+	margin-top 80px
 .m-bottom-20
 	margin-top 20px
 .m-bottom-40
-	margin-top 40px
-	
+	margin-bottom 40px	
 body
 	background fondo
 	font-family 'Alegreya', serif
@@ -18,6 +19,7 @@ body
 
 #masthead
 	background footer
+	z-index 100
 .navbar
 	background footer
 .navbar-brand
@@ -83,6 +85,29 @@ p.intro
 				color white
 			.icon-mas
 				font-size 1.8em
+		.link-btn-mas
+		.block-desc
+			display none
+.productos-destacados-container
+	position relative
+	.item
+		img
+			width 75%
+			display block
+			margin 0 auto
+	.slick-arrow
+		position absolute
+		top 40%
+		font-size 2em
+		border none
+		background none
+		&:active
+		&:focus
+			outline none
+		&.slick-prev
+			left -10px
+		&.slick-next
+			right -10px
 .site-footer
 	background footer
 	margin-top 50px
@@ -107,17 +132,95 @@ p.intro
 			margin 0 4px
 			a
 				font-size 2em
+@media screen and (min-width: 425px)
+	.categories-block
+		.category-item
+			.cat-banner
+				height 200px
+			.cat-info
+				top 75px
 @media screen and (min-width: 768px)
+	.main-banners-container
+		height 450px
+	p.intro
+		padding 60px 120px
 	.middle-align
 		display flex
 		align-items center
-	.col-footer
+	.site-footer
 		p
 			font-size .9em
 		h2
 		h4
 			font-size 1em
 			font-weight 700
+		a
+			color cafe
+			transition color .5s ease
+			&:hover
+				color rgba(cafe, .7)
+				transition color .5s ease
+		.logo-colarte-footer
+			width 200px
+			margin 15px auto
+		.col-footer
+			margin 0
+	.categories-block
+		background-image none
+		.category-item
+			margin-bottom 100px
+			&:last-of-type
+				margin-bottom 0
+			&.proyectos-item
+				position relative
+				display block
+				margin-bottom 600px
+				.cat-banner
+					width 60%
+					float right
+				.cat-info
+					padding 50px 350px 50px 50px
+					height 300px
+					width 80%
+					float left
+					right unset
+					top 50px
+			.cat-banner
+				border-radius 0
+				height 300px
+				margin 0
+				width 60%
+				z-index 1
+				position relative
+			.cat-info
+				padding 50px 50px 50px 350px
+				height 300px
+				background white url(./assets/images/textura-general.png) repeat-x center 25px
+				color cafe
+				width 80%
+				float right
+				position absolute
+				right 0
+				top -50px
+				z-index 0
+				.link-btn-mas
+					color white
+					background cafe
+					padding 4px 20px
+					display inline-block
+					border-radius 24px
+				h2
+					a
+						color cafe
+			.link-icon-mas
+				display none
+			.block-desc
+				display block
+				margin-top 60px
+	.productos-destacados-container
+		.item
+			img
+				width 70%
 @media screen and (min-width: 992px)
 	.skip-link.screen-reader-text
 		display none
@@ -131,3 +234,48 @@ p.intro
 	.navbar.navbar-expand-md
 		width 920px
 		margin 0 auto
+	p.intro
+		padding 80px 200px
+	.categories-block
+		.category-item
+			&.proyectos-item
+				.cat-info
+					padding 50px 450px 50px 50px
+			.cat-banner
+				width 60%
+			.cat-info
+				padding 50px 70px 50px 450px
+				width 80%
+			.block-desc
+				margin-top 60px
+@media screen and (min-width: 1200px)
+	.main-banners-container
+		height 600px
+	.categories-block
+		.category-item
+			&.proyectos-item
+				.cat-info
+					padding 50px 640px 50px 50px
+			.cat-banner
+				width 60%
+			.cat-info
+				padding 50px 70px 50px 590px
+				width 80%
+			.block-desc
+				margin-top 60px
+@media screen and (min-width: 1600px)
+	.categories-block
+		.category-item
+			&.proyectos-item
+				.cat-info
+					padding 50px 790px 50px 50px
+			.cat-info
+				padding 50px 70px 50px 640px
+@media screen and (min-width: 1800px)
+	.categories-block
+		.category-item
+			&.proyectos-item
+				.cat-info
+					padding 50px 790px 50px 50px
+			.cat-info
+				padding 50px 70px 50px 760px
