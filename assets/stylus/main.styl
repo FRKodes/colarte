@@ -4,6 +4,8 @@ cafe = #614e40
 
 .bold
 	font-weight 700
+.centered
+	margin 0 auto
 .m-top-40
 	margin-top 40px
 .m-top-80
@@ -11,7 +13,9 @@ cafe = #614e40
 .m-bottom-20
 	margin-top 20px
 .m-bottom-40
-	margin-bottom 40px	
+	margin-bottom 40px
+.back-white
+	background-color white
 body
 	background fondo
 	font-family 'Alegreya', serif
@@ -47,9 +51,46 @@ body
 		color cafe
 		text-align center
 .main-banners-container
-	height 320px
+	height 250px
 	display block
 	width 100%
+	.item
+		width 100%
+		display block
+		height 250px
+		&.uno
+			background transparent url(./assets/images/banner-home.jpg) no-repeat center center
+			background-size 600px
+		&.dos
+			background transparent url(./assets/images/banner-blog.jpg) no-repeat center center
+			background-size 600px
+		&.tres
+			background transparent url(./assets/images/banner-catalogo.jpg) no-repeat center center
+			background-size 600px
+	.slick-dots
+		text-align center
+		padding 0
+		margin -35px 0 0 0
+		z-index 10
+		position relative
+		li
+			display inline-block
+			border 1px solid white
+			overflow hidden
+			width 12px
+			height 12px
+			border-radius 50%
+			margin 0 4px
+			background transparent
+			transition background 1s ease
+			&.slick-active
+				border none
+				background white
+				transition background .5s ease
+			button
+				background none
+				color transparent
+				border none
 p.intro
 	padding 30px 20px
 .site-content
@@ -108,6 +149,103 @@ p.intro
 			left -10px
 		&.slick-next
 			right -10px
+.inner-banner-top
+	height 250px
+	width 100%
+	display flex
+	background-color footer
+	background-repeat no-repeat
+	background-position center center
+	background-size 600px
+	margin-bottom 30px
+	justify-content center
+	align-items center
+	h1
+		color white
+		font-size 3em
+		text-shadow 3px 3px 5px rgba(0,0,0,1)
+.left-image
+	background purple url(./assets/images/nosotros-expertos.jpg) no-repeat center center
+	background-size cover
+	height 200px
+	display block
+.right-image
+	background transparent url(./assets/images/nosotros-magia.jpg) no-repeat center center
+	background-size cover
+	height 200px
+	display block
+.nosotros-info
+	background-color white
+	h2
+		margin 30px 0
+		text-align center
+.nosotros-first-block
+.nosotros-second-block
+	position relative
+	margin 40px 0
+.nosotros-second-block
+	.nosotros-info
+		padding-top 20px
+.inner-banner-middle
+	height 200px
+	width 100%
+	display block
+	margin 20px 0
+	&.nosotros
+		background-image url(./assets/images/nosotros-banner-medio.jpg)
+		background-color transparent
+		background-position center center
+		background-repeat no-repeat
+		background-size cover
+.form
+	padding-top 30px
+	padding-bottom 30px
+	
+.form-group
+	&.radio
+		display flex
+		align-items center
+		input
+			height 16px
+			width 16px
+			margin-right 10px
+			border 1px solid cafe
+.form-control
+	border-color cafe
+	border-radius 3px
+	background rgba(cafe, .2)
+	&::placeholder
+		color cafe
+	&:focus
+		background rgba(cafe, .3)
+	&:active
+		outline none
+input.phone
+	margin-top 16px
+.send-btn
+	background cafe
+	color white
+	border none
+	border-radius 25px
+	display inherit
+	width 130px
+.newsletter
+	border-radius 25px
+	background rgba(cafe, .2)
+	border-color cafe
+.address-container
+	background purple
+	padding 30px
+	color white
+	width 100%
+.map-container
+	width 100%
+	display block
+	height auto
+#map
+	width 100%
+	height 250px
+	display block
 .site-footer
 	background footer
 	margin-top 50px
@@ -139,14 +277,71 @@ p.intro
 				height 200px
 			.cat-info
 				top 75px
+@media screen and (min-width: 557px)
+	.main-banners-container
+		height 300px
+		display block
+		width 100%
+		.item
+			width 100%
+			display block
+			height 300px
+			&.uno
+				background-size 768px
+			&.dos
+				background-size 768px
+			&.tres
+				background-size 768px
+	.inner-banner-top
+		height 300px
+		background-size 768px
+		h1
+			font-size 4em
+	.left-image
+		height 360px
 @media screen and (min-width: 768px)
 	.main-banners-container
 		height 450px
+		.item
+			height 450px
+			&.uno
+			&.dos
+			&.tres
+				background-size cover
+	.inner-banner-top
+		height 450px
+		background-size cover
 	p.intro
 		padding 60px 120px
 	.middle-align
 		display flex
 		align-items center
+	.left-image
+		position relative
+		z-index 2
+		height 460px
+	.nosotros-first-block
+		margin 80px 0 40px 0
+	.nosotros-info
+		padding 20px 70px 40px 190px
+		background white url(./assets/images/textura-general.png) repeat-x center 40px
+		position relative
+		margin-top -490px
+		right 0
+		z-index 1
+		h2
+			text-align left
+	.nosotros-second-block
+		margin 40px 0 80px 0
+		.nosotros-info
+			margin-top 0
+			padding 50px 160px 40px 40px
+			background white url(./assets/images/textura-general.png) repeat-x center 320px
+			z-index 1
+		.right-image
+			margin-top -450px
+			height 420px
+			z-index 2
 	.site-footer
 		p
 			font-size .9em
@@ -221,6 +416,51 @@ p.intro
 		.item
 			img
 				width 70%
+	.back-texture
+		background transparent url(./assets/images/textura-general.png) repeat-x center center
+		height 90px
+		display flex
+		justify-content center
+		align-items center
+		margin-top 70px
+		position relative
+		z-index 2
+	.contact-inner-block
+		background white
+		padding-top 190px
+		margin-top -130px
+		position relative
+		z-index 1
+	.form
+		padding 0
+		.fifty
+			width 48%
+			display inline-block
+	.form-group
+		&.flex
+			display flex
+			justify-content space-between
+			align-items center
+	input.phone
+		margin-top 0
+	.address-container
+		background purple url(./assets/images/contacto-madera.jpg) no-repeat center top
+		background-size 310px
+		background-position center -50px
+		padding 30px
+		color white
+		width 40%
+		position relative
+		.address
+			position absolute
+			bottom 10px
+	.map-container
+		width 60%
+		display inline-block
+		height auto
+	#map
+		height 350px
+		display inline-block
 @media screen and (min-width: 992px)
 	.skip-link.screen-reader-text
 		display none
@@ -248,9 +488,52 @@ p.intro
 				width 80%
 			.block-desc
 				margin-top 60px
+	.nosotros-first-block
+		margin 100px 0 60px 0
+	.nosotros-info
+		padding 20px 140px 40px 320px
+		background-position center 45px
+		margin-top -490px
+		right 0
+		z-index 1
+		h2
+			text-align left
+	.nosotros-second-block
+		margin 40px 0 80px 0
+		.nosotros-info
+			margin-top 0
+			padding 50px 260px 40px 90px
+			z-index 1
+		.right-image
+			margin-top -450px
+			height 420px
+			z-index 2
+	.address-container
+		background purple url(./assets/images/contacto-madera.jpg) no-repeat center top
+		background-size 450px
+		background-position center -150px
+		width 30%
+		padding 20px
+		position relative
+		height 350px
+		.address
+			position absolute
+			bottom 10px
+	.map-container
+		width 70%
+	#map
+		height 350px
 @media screen and (min-width: 1200px)
 	.main-banners-container
 		height 600px
+		.item
+			height 600px
+		.slick-dots
+			margin -35px 0 0 0
+			li
+				width 14px
+				height 14px
+				margin 0 6px
 	.categories-block
 		.category-item
 			&.proyectos-item
@@ -263,6 +546,32 @@ p.intro
 				width 80%
 			.block-desc
 				margin-top 60px
+	.nosotros-first-block
+		margin 100px 0 60px 0
+	.nosotros-info
+		padding 20px 180px 40px 420px
+	.nosotros-second-block
+		margin 40px 0 80px 0
+		.nosotros-info
+			padding 50px 360px 40px 140px
+	.address-container
+		background-size 450px
+		background-position center -80px
+		width 30%
+		padding 50px
+		height 450px
+		.address
+			bottom 20px
+	.map-container
+		width 70%
+	#map
+		height 450px
+@media screen and (min-width: 1400px)
+	.address-container
+		background-size 550px
+		background-position center -160px
+		padding 50px
+		height 450px
 @media screen and (min-width: 1600px)
 	.categories-block
 		.category-item
@@ -279,3 +588,6 @@ p.intro
 					padding 50px 790px 50px 50px
 			.cat-info
 				padding 50px 70px 50px 760px
+	.address-container
+		background-size cover
+		background-position center -250px

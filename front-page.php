@@ -23,7 +23,9 @@ get_header();
 		<div class="container-fluid" style="background: purple;">
 			<div class="row">
 				<div class="main-banners-container">
-					<div class="item"></div>
+					<div class="item uno gray"></div>
+					<div class="item dos purple"></div>
+					<div class="item tres green"></div>
 				</div>
 			</div>
 		</div>
@@ -90,20 +92,20 @@ get_header();
 		</div>
 
 		<?php
-		if ( have_posts() ) {
+		// if ( have_posts() ) {
 
-			// Load posts loop.
-			while ( have_posts() ) {
-				the_post();
-				get_template_part( 'template-parts/content/content' );
-			}
+		// 	// Load posts loop.
+		// 	while ( have_posts() ) {
+		// 		the_post();
+		// 		get_template_part( 'template-parts/content/content' );
+		// 	}
 
-		} else {
+		// } else {
 
-			// If no content, include the "No posts found" template.
-			get_template_part( 'template-parts/content/content', 'none' );
+		// 	// If no content, include the "No posts found" template.
+		// 	get_template_part( 'template-parts/content/content', 'none' );
 
-		}
+		// }
 		?>
 
 		</main><!-- .site-main -->

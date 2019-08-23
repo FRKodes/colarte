@@ -52,10 +52,10 @@
 					<h2>SUSCÍBETE A NUESTRO BOLETÍN</h2>
 					<form action="">
 						<div class="form-group">
-							<input type="text" class="form-control">
+							<input type="text" class="form-control newsletter" placeholder="Email">
 						</div>
 						<div class="form-group">
-							<input type="submit" class="btn btn-primary" value="SUSCRIBIRME">
+							<input type="submit" class="btn btn-primary send-btn centered" value="SUSCRIBIRME">
 						</div>
 					</form>
 				</div>

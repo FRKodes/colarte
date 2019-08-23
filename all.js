@@ -19,6 +19,14 @@ $('.navbar-nav li').addClass('nav-item');
 $('.navbar-nav li a').addClass('nav-link');
 
 
+$('.main-banners-container').slick({
+  infinite: true,
+  dots: true,
+  arrows: false,
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+
 $('.productos-destacados-container').slick({
 	dots: false,
 	infinite: true,

@@ -5,6 +5,9 @@
  * @subpackage colarte
  * @since 1.0.0
  */
+
+add_theme_support( 'post-thumbnails' ); 
+
 wp_deregister_script('jquery');
 
 wp_enqueue_style( 'theme-styles', get_template_directory_uri() . '/colarte-styles.css',false,'1.0','all');
