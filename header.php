@@ -49,7 +49,7 @@
 						<?php get_template_part( 'template-parts/header/entry', 'header' ); ?>
 					</div><!-- .entry-header -->
 
-					<?php rewind_posts(); ?>
+					<?php //rewind_posts(); ?>
 
 				</div>
 			<?php endif; ?>

@@ -5,51 +5,69 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package WordPress
- * @subpackage Twenty_Nineteen
+ * @subpackage colarte
  * @since 1.0.0
  */
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php if ( ! twentynineteen_can_show_post_thumbnail() ) : ?>
-	<header class="entry-header">
-		<?php get_template_part( 'template-parts/header/entry', 'header' ); ?>
-	</header>
-	<?php endif; ?>
+<div class="inner-banner-top" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);"></div>
 
-	<div class="entry-content">
-		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentynineteen' ),
-					array(
-						'span' => array(
-							'class' => array(),
+<div class="container-fluid no-padding">
+	<div class="row">
+		<div class="col-xs-12 col-md-12">
+			<?php the_title('<h1 class="single-title text-center">', '</h1>') ?>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	
+	<div class="row">
+
+		<div class="col-xs-12 col-md-11 ml-auto">
+			
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+			<header class="entry-header">
+				<?php get_template_part( 'template-parts/header/entry', 'header' ); ?>
+			</header>
+
+			<div class="entry-content single-content">
+				<?php
+				the_content(
+					sprintf(
+						wp_kses(
+							/* translators: %s: Name of current post. Only visible to screen readers */
+							__( 'Continue reading<span class="screen-reader-text"> "%s"</span>' ),
+							array(
+								'span' => array(
+									'class' => array(),
+								),
+							)
 						),
+						get_the_title()
 					)
-				),
-				get_the_title()
-			)
-		);
+				);
 
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'twentynineteen' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
+				wp_link_pages(
+					array(
+						'before' => '<div class="page-links">' . __( 'Pages:' ),
+						'after'  => '</div>',
+					)
+				);
+				?>
+			</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php twentynineteen_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+			<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
 
-	<?php if ( ! is_singular( 'attachment' ) ) : ?>
-		<?php get_template_part( 'template-parts/post/author', 'bio' ); ?>
-	<?php endif; ?>
+			<?php if ( ! is_singular( 'attachment' ) ) : ?>
+				<?php get_template_part( 'template-parts/post/author', 'bio' ); ?>
+			<?php endif; ?>
 
-</article><!-- #post-<?php the_ID(); ?> -->
+			</article>
+
+		</div>
+	</div>
+</div>

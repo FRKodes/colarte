@@ -18,6 +18,8 @@ $('#menu-main-menu').addClass('navbar-nav ml-auto');
 $('.navbar-nav li').addClass('nav-item');
 $('.navbar-nav li a').addClass('nav-link');
 
+$('.entries-container .post.type-post').addClass('col-xs-12 col-md-6');
+
 
 $('.main-banners-container').slick({
   infinite: true,

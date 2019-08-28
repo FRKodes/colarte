@@ -6,14 +6,22 @@ cafe = #614e40
 	font-weight 700
 .centered
 	margin 0 auto
+.top-0
+	top 0 !important
 .m-top-40
 	margin-top 40px
 .m-top-80
 	margin-top 80px
+.m-bottom--30
+	margin-bottom -30px !important
+.m-bottom-330
+	margin-bottom 330px !important
 .m-bottom-20
 	margin-top 20px
 .m-bottom-40
 	margin-bottom 40px
+.m-bottom-80
+	margin-bottom 80px
 .back-white
 	background-color white
 body
@@ -103,7 +111,6 @@ p.intro
 		margin 30px 0
 		position relative
 		.cat-banner
-			background purple
 			height 125px
 			width 80%
 			margin 0 auto
@@ -116,6 +123,21 @@ p.intro
 				background-size cover
 			&.blog
 				background url(./assets/images/banner-blog.jpg) no-repeat center center
+				background-size cover
+			&.chiapas
+				background url(./assets/images/catalogo-cat-chiapas.jpg) no-repeat center center
+				background-size cover
+			&.tequila
+				background url(./assets/images/catalogo-cat-tequila.jpg) no-repeat center center
+				background-size cover
+			&.tradicional
+				background url(./assets/images/catalogo-cat-tradicional.jpg) no-repeat center center
+				background-size cover
+			&.jalisco
+				background url(./assets/images/catalogo-cat-jalisco.jpg) no-repeat center center
+				background-size cover
+			&.porfiriana
+				background url(./assets/images/catalogo-cat-porfiriana.jpg) no-repeat center center
 				background-size cover
 		.cat-info
 			text-align center
@@ -246,6 +268,46 @@ input.phone
 	width 100%
 	height 250px
 	display block
+article.type-post
+	margin-bottom 30px
+	.post-image
+		height 200px
+		background-position center center
+		background-size cover
+		background-repeat no-repeat
+	.entry-content
+		background white
+		padding 20px
+		.entry-title
+			text-align center
+			a
+				color cafe
+		.link-post
+			color cafe
+			width 100%
+			display block
+			text-align center
+			font-size 2em
+			margin-top 20px
+		.ver-mas
+			display none
+h1.single-title
+	font-size 1.2em
+	margin-bottom 30px
+	padding 0
+	display flex
+	justify-content center
+	align-items center
+.post-navigation
+	text-align center
+	h2
+		margin-bottom 30px
+	.nav-links
+		.nav-previous
+		.nav-next
+			margin-bottom 30px
+		a
+			color cafe
 .site-footer
 	background footer
 	margin-top 50px
@@ -270,6 +332,23 @@ input.phone
 			margin 0 4px
 			a
 				font-size 2em
+.comment-respond
+	text-align center
+	.comment-reply-title
+		width 100%
+		display block
+	.comment-form-comment
+		display flex
+		justify-content space-between
+		textarea
+			resize none
+	.form-submit
+		input.submit
+			background cafe
+			border none
+			border-radius 25px
+			color white
+			padding 6px 16px
 @media screen and (min-width: 425px)
 	.categories-block
 		.category-item
@@ -343,6 +422,7 @@ input.phone
 			height 420px
 			z-index 2
 	.site-footer
+		margin-top 0
 		p
 			font-size .9em
 		h2
@@ -362,6 +442,9 @@ input.phone
 			margin 0
 	.categories-block
 		background-image none
+		&.back-bottom
+			background transparent url(./assets/images/textura-general.png) repeat-x center bottom
+			padding-bottom 120px
 		.category-item
 			margin-bottom 100px
 			&:last-of-type
@@ -398,6 +481,24 @@ input.phone
 				right 0
 				top -50px
 				z-index 0
+				&.chiapas
+					background white url(./assets/images/textura-chiapas.jpg) repeat-x center 25px
+				&.tequila
+					background white url(./assets/images/textura-tequila.jpg) repeat-x center 25px
+				&.tradicional
+					background white url(./assets/images/textura-tradicional.jpg) repeat-x center 25px
+				&.jalisco
+					background white url(./assets/images/textura-jalisco.jpg) repeat-x center 25px
+				&.porfiriana
+					background white url(./assets/images/textura-porfiriana.jpg) repeat-x center 25px
+				&.chiapas
+				&.tequila
+				&.tradicional
+				&.jalisco
+				&.porfiriana
+					h2
+						a
+							color white
 				.link-btn-mas
 					color white
 					background cafe
@@ -413,6 +514,7 @@ input.phone
 				display block
 				margin-top 60px
 	.productos-destacados-container
+		margin-bottom 100px
 		.item
 			img
 				width 70%
@@ -461,6 +563,56 @@ input.phone
 	#map
 		height 350px
 		display inline-block
+	.catalog-inner-block
+		background white
+		padding 190px 60px 60px 80px
+		margin-top -140px
+		position relative
+		z-index 1
+	article.type-post
+		margin-bottom 30px
+		.post-image
+			height 315px
+		.entry-content
+			text-align center
+			.entry-title
+				font-size 1.2em
+				height 52px
+				overflow hidden
+			.link-post
+				display none
+			.ver-mas
+				display inline-block
+	h1.single-title
+		font-size 1.4em
+		padding 0 40px
+	.entry-content.single-content
+		text-align left !important
+	.post-navigation
+		text-align unset
+		h2
+			margin-bottom 30px
+			text-align center
+		.nav-links
+			display flex
+			justify-content space-between
+			align-items center
+			.nav-previous
+			.nav-next
+				margin-bottom 30px
+				width 35%
+			.nav-next
+				text-align right
+	.comment-respond
+		text-align center
+		.comment-reply-title
+			margin-top 60px
+		.comment-form-comment
+			flex-flow column
+			justify-content center
+			align-items center
+			textarea
+				width 50%
 @media screen and (min-width: 992px)
 	.skip-link.screen-reader-text
 		display none
@@ -523,6 +675,11 @@ input.phone
 		width 70%
 	#map
 		height 350px
+	h1.single-title
+		font-size 1.5em
+		padding 0 10%
+	.catalog-inner-block
+		padding 190px 140px 60px 80px
 @media screen and (min-width: 1200px)
 	.main-banners-container
 		height 600px
@@ -566,6 +723,23 @@ input.phone
 		width 70%
 	#map
 		height 450px
+	.container-fluid.no-padding
+		padding-left 0
+		padding-right 0
+	h1.single-title
+		background transparent url(./assets/images/textura-general.png) repeat-x center center
+		height 90px
+		padding 0 25%
+		position relative
+		z-index 2
+		margin-top 100px
+	.entry-content.single-content
+		padding 200px 40px 20px 80px !important
+		margin-top -180px
+		position relative
+		z-index 1
+	.catalog-inner-block
+		padding 190px 180px 60px 120px
 @media screen and (min-width: 1400px)
 	.address-container
 		background-size 550px

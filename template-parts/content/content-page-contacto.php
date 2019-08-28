@@ -66,7 +66,7 @@
 
 	<div class="entry-footer">
 		<div class="container-fluid">
-			<div class="row m-top-40">
+			<div class="row m-top-40 m-bottom-80">
 				<div class="address-container">
 					<div class="address">
 						<h3>FÁBRICA:</h3>
