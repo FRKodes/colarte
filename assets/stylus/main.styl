@@ -4,6 +4,8 @@ cafe = #614e40
 
 .bold
 	font-weight 700
+.cafe
+	color cafe
 .centered
 	margin 0 auto
 .top-0
@@ -349,6 +351,75 @@ h1.single-title
 			border-radius 25px
 			color white
 			padding 6px 16px
+.product-item-grid
+	.entry-header
+		a
+			display flex
+			justify-content center
+			align-items center
+			width 100%
+			height 100%
+		img
+			width 70%
+			height auto
+			display block
+	h2.title
+		font-size 1.2em
+		transition color .5s ease
+		color cafe
+		&:hover
+			color rgba(cafe, .8)
+			transition color .5s ease
+.banner-coleccion
+	height 260px
+	background purple
+	display block
+	width 100%
+	&.tradicional
+		background transparent url(./assets/images/banner-tradicional.jpg) no-repeat center center
+		background-size cover
+	&.tequila
+		background transparent url(./assets/images/banner-tequila.jpg) no-repeat center center
+		background-size cover
+	&.porfiriana
+		background transparent url(./assets/images/banner-porfiriana.jpg) no-repeat center center
+		background-size cover
+	&.chiapas
+		background transparent url(./assets/images/banner-chiapas.jpg) no-repeat center center
+		background-size cover
+	&.jalisco
+		background transparent url(./assets/images/banner-jalisco.jpg) no-repeat center center
+		background-size cover
+.colecciones-container
+	display flex
+	flex-flow column
+	align-items center
+	width 100%
+	.item-coleccion
+		text-align center
+		width 100%
+		height 100%
+		a
+			padding 10px 0
+			width 100%
+			height 100%
+			display block
+			color white
+		&.chiapas
+			background transparent url(./assets/images/textura-chiapas.jpg) repeat-x center center
+			background-size 23px
+		&.tequila
+			background transparent url(./assets/images/textura-tequila.jpg) repeat-x center center
+			background-size 23px
+		&.tradicional
+			background transparent url(./assets/images/textura-tradicional.jpg) repeat-x center center
+			background-size 23px
+		&.porfiriana
+			background transparent url(./assets/images/textura-porfiriana.jpg) repeat-x center center
+			background-size 23px
+		&.jalisco
+			background transparent url(./assets/images/textura-jalisco.jpg) repeat-x center center
+			background-size 23px
 @media screen and (min-width: 425px)
 	.categories-block
 		.category-item
@@ -613,6 +684,11 @@ h1.single-title
 			align-items center
 			textarea
 				width 50%
+	.colecciones-container
+		display flex
+		flex-flow row
+		align-items center
+		justify-content center
 @media screen and (min-width: 992px)
 	.skip-link.screen-reader-text
 		display none
@@ -691,6 +767,8 @@ h1.single-title
 				width 14px
 				height 14px
 				margin 0 6px
+	.banner-coleccion
+		height 360px
 	.categories-block
 		.category-item
 			&.proyectos-item

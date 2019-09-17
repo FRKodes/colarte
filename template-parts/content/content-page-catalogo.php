@@ -51,9 +51,9 @@
 					<div class="cat-banner chiapas"></div>
 					<div class="cat-info chiapas top-0">
 						<h2><a href="#">Chiapas</a></h2>
-						<a class="link-icon-mas" href="#"><span class="icon-mas"></span></a>
+						<a class="link-icon-mas" href="/coleccion/chiapas"><span class="icon-mas"></span></a>
 						<p class="block-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-						<a class="link-btn-mas" href="#">Ver más</a>
+						<a class="link-btn-mas" href="/coleccion/chiapas">Ver más</a>
 					</div>
 				</div>
 				
@@ -62,9 +62,9 @@
 					<div class="cat-banner tequila"></div>
 					<div class="cat-info tequila top-0">
 						<h2><a href="#">Tequila</a></h2>
-						<a class="link-icon-mas" href="#"><span class="icon-mas"></span></a>
+						<a class="link-icon-mas" href="/coleccion/tequila"><span class="icon-mas"></span></a>
 						<p class="block-desc">Voluptatibus necessitatibus neque dolores temporibus deserunt beatae, fugit.</p>
-						<a class="link-btn-mas" href="#">Ver más</a>
+						<a class="link-btn-mas" href="/coleccion/tequila">Ver más</a>
 					</div>
 				</div>
 				
@@ -73,9 +73,9 @@
 					<div class="cat-banner tradicional"></div>
 					<div class="cat-info tradicional top-0">
 						<h2><a href="#">Tradicional</a></h2>
-						<a class="link-icon-mas" href="#"><span class="icon-mas"></span></a>
+						<a class="link-icon-mas" href="/coleccion/tradicional"><span class="icon-mas"></span></a>
 						<p class="block-desc">Repellendus similique distinctio obcaecati doloremque voluptatibus necessitatibus cum voluptate!</p>
-						<a class="link-btn-mas" href="#">Ver más</a>
+						<a class="link-btn-mas" href="/coleccion/tradicional">Ver más</a>
 					</div>
 				</div>
 
@@ -83,9 +83,9 @@
 					<div class="cat-banner jalisco"></div>
 					<div class="cat-info jalisco top-0">
 						<h2><a href="#">Jalisco</a></h2>
-						<a class="link-icon-mas" href="#"><span class="icon-mas"></span></a>
+						<a class="link-icon-mas" href="/coleccion/jalisco"><span class="icon-mas"></span></a>
 						<p class="block-desc">Voluptatibus necessitatibus neque dolores temporibus deserunt beatae, fugit.</p>
-						<a class="link-btn-mas" href="#">Ver más</a>
+						<a class="link-btn-mas" href="/coleccion/jalisco">Ver más</a>
 					</div>
 				</div>
 
@@ -94,9 +94,9 @@
 					<div class="cat-banner porfiriana"></div>
 					<div class="cat-info porfiriana top-0">
 						<h2><a href="#">Porfiriana</a></h2>
-						<a class="link-icon-mas" href="#"><span class="icon-mas"></span></a>
+						<a class="link-icon-mas" href="/coleccion/porfiriana"><span class="icon-mas"></span></a>
 						<p class="block-desc">Repellendus similique distinctio obcaecati doloremque voluptatibus necessitatibus cum voluptate!</p>
-						<a class="link-btn-mas" href="#">Ver más</a>
+						<a class="link-btn-mas" href="/coleccion/porfiriana">Ver más</a>
 					</div>
 				</div>
 
