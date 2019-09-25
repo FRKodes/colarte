@@ -15,9 +15,7 @@ get_header();
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main entries-container">
 
-			<div class="inner-banner-top" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);">
-				<?php the_title('<h1>', '</h1>') ?>
-			</div>
+			<div class="inner-banner-top blog"><h1>Blog Muebles Colarte</h1></div>
 
 			<div class="container">
 				<div class="row">

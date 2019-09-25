@@ -62,8 +62,6 @@ function create_colarte_product() {
     );
 }
 
-
-
 add_action( 'init', 'create_product_taxonomies', 0 );
 
 function create_product_taxonomies() {
@@ -79,6 +77,40 @@ function create_product_taxonomies() {
             'show_ui' => true,
             'show_tagcloud' => false,
             'hierarchical' => true
+        )
+    );
+}
+
+
+
+
+add_action( 'init', 'create_colarte_project' );
+
+function create_colarte_project() {
+    register_post_type( 'proyecto',
+        array(
+            'labels' => array(
+                'name' => 'Proyectos',
+                'singular_name' => 'Proyecto',
+                'add_new' => 'Agregar nuevo',
+                'add_new_item' => 'Agregar nuevo Proyecto',
+                'edit' => 'Editar',
+                'edit_item' => 'Editar Proyecto',
+                'new_item' => 'Nueva Proyecto',
+                'view' => 'Ver',
+                'view_item' => 'Ver Proyecto',
+                'search_items' => 'Buscar Proyecto',
+                'not_found' => 'No se encontró el Proyecto',
+                'not_found_in_trash' => 'No se encontró el Proyecto en la papelera',
+                'parent' => 'Proyecto padre'
+            ),
+ 
+            'public' => true,
+            'menu_position' => 15,
+            'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+            'taxonomies' => array( '' ),
+            // 'menu_icon' => plugins_url( 'images/image.png', __FILE__ ),
+            'has_archive' => true
         )
     );
 }

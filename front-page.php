@@ -20,7 +20,7 @@ get_header();
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
 		
-		<div class="container-fluid" style="background: purple;">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="main-banners-container">
 					<div class="item uno gray"></div>
@@ -33,7 +33,8 @@ get_header();
 		<div class="container">
 			<div class="row">
 				<p class="intro text-center">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam tenetur labore, odio reiciendis. Blanditiis amet error temporibus, est ab voluptates soluta.
+					Fabricamos piezas auténticas que reflejan la cultura y tradiciones mexicanas para llevarlas mas allá de nuestras fronteras. <br><br>
+					Nos enfocamos en brindar a nuestros clientes honestidad, responsabilidad, confianza, y amistad con cada uno ya que para nosotros antes de ser nuestro cliente es nuestro amigo y parte de esta gran familia MUEBLES COLARTE.
 				</p>
 			</div>
 		</div>
@@ -47,7 +48,7 @@ get_header();
 						<div class="cat-info">
 							<h2><a href="#">Catálogo</a></h2>
 							<a class="link-icon-mas" href="#"><span class="icon-mas"></span></a>
-							<p class="block-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+							<p class="block-desc">Contamos con distintas líneas de producto, cada una de ellas con una identidad bien definida.</p>
 							<a class="link-btn-mas" href="#">Ver más</a>
 						</div>
 					</div>
@@ -57,7 +58,7 @@ get_header();
 						<div class="cat-info">
 							<h2><a href="#">Proyectos</a></h2>
 							<a class="link-icon-mas" href="#"><span class="icon-mas"></span></a>
-							<p class="block-desc">Voluptatibus necessitatibus neque dolores temporibus deserunt beatae, fugit.</p>
+							<p class="block-desc">Desarrollamos proyectos a la medida de las necesidades de nuestros clientes, convierte tu restaurant un pedacito de México.</p>
 							<a class="link-btn-mas" href="#">Ver más</a>
 						</div>
 					</div>
@@ -67,7 +68,7 @@ get_header();
 						<div class="cat-info">
 							<h2><a href="#">Blog</a></h2>
 							<a class="link-icon-mas" href="#"><span class="icon-mas"></span></a>
-							<p class="block-desc">Repellendus similique distinctio obcaecati doloremque voluptatibus necessitatibus cum voluptate!</p>
+							<p class="block-desc">Conoce más acerca de nuestro trabajo, es un placer contarte nuestras historias del día a día.</p>
 							<a class="link-btn-mas" href="#">Ver más</a>
 						</div>
 					</div>
@@ -80,12 +81,14 @@ get_header();
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
 					<h2 class="text-center m-top-80 m-bottom-40">PRODUCTOS DESTACADOS</h2>
-					<div class="productos-destacados-container">
-						<div class="item"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/producto-silla.jpg" alt="producto silla Muebles Colarte"></a></div>
-						<div class="item"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/producto-silla.jpg" alt="producto silla Muebles Colarte"></a></div>
-						<div class="item"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/producto-silla.jpg" alt="producto silla Muebles Colarte"></a></div>
-						<div class="item"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/producto-silla.jpg" alt="producto silla Muebles Colarte"></a></div>
-						<div class="item"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/producto-silla.jpg" alt="producto silla Muebles Colarte"></a></div>
+					<div class="productos-destacados-container"><?php 
+						$args = array( 'post_type' => 'producto', 'posts_per_page' => 6 );
+						$loop = new WP_Query( $args );
+						while ( $loop->have_posts() ) : $loop->the_post(); ?>
+							<div class="item">
+								<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail(); ?></a>
+							</div> <?php 
+						endwhile; ?>
 					</div>
 				</div>
 			</div>

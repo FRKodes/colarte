@@ -156,8 +156,12 @@ p.intro
 .productos-destacados-container
 	position relative
 	.item
+		a:active
+		a:focus
+			outline none
 		img
 			width 75%
+			height auto
 			display block
 			margin 0 auto
 	.slick-arrow
@@ -188,6 +192,8 @@ p.intro
 		color white
 		font-size 3em
 		text-shadow 3px 3px 5px rgba(0,0,0,1)
+	&.blog
+		background-image url(./assets/images/banner-blog.jpg)
 .left-image
 	background purple url(./assets/images/nosotros-expertos.jpg) no-repeat center center
 	background-size cover
@@ -224,7 +230,8 @@ p.intro
 .form
 	padding-top 30px
 	padding-bottom 30px
-	
+form
+	position relative
 .form-group
 	&.radio
 		display flex
@@ -234,6 +241,14 @@ p.intro
 			width 16px
 			margin-right 10px
 			border 1px solid cafe
+	&.error
+		input
+		textarea
+			border-color red
+	&.text-danger
+		display none
+textarea
+	resize none
 .form-control
 	border-color cafe
 	border-radius 3px
@@ -253,6 +268,19 @@ input.phone
 	border-radius 25px
 	display inherit
 	width 130px
+	transition background .5s ease
+	&:hover
+		background rgba(cafe, .8)
+		transition background .5s ease
+.sent_mail_alert
+	text-align center
+	background-color rgba(cafe, .8)
+	padding 20px
+	position absolute
+	bottom 120px
+	width 100%
+	color white
+	display none
 .newsletter
 	border-radius 25px
 	background rgba(cafe, .2)
@@ -372,7 +400,7 @@ h1.single-title
 			transition color .5s ease
 .banner-coleccion
 	height 260px
-	background purple
+	background cafe
 	display block
 	width 100%
 	&.tradicional
@@ -420,6 +448,111 @@ h1.single-title
 		&.jalisco
 			background transparent url(./assets/images/textura-jalisco.jpg) repeat-x center center
 			background-size 23px
+.product-gallery
+	width 100%
+	overflow hidden
+	height auto
+	.main-image
+		margin 20px 0
+		img
+			width 100%
+			height auto
+			display block
+	ul.images
+		display block
+		text-align left
+		padding 0
+		margin 0
+		li
+			display inline-block
+			width 30%
+			margin 0 1%
+			img
+				width 100%
+				height auto
+				display block
+.product-info
+	h1.single-title
+		font-size 1.6em !important
+		color white
+		height 90px
+		text-align center
+		margin-bottom 0
+.info-column
+	article.hentry
+		margin-top 40px
+	&.tradicional
+		background transparent url(./assets/images/textura-tradicional.jpg) repeat-x center top
+	&.tequila
+		background transparent url(./assets/images/textura-tequila.jpg) repeat-x center top
+	&.jalisco
+		background transparent url(./assets/images/textura-jalisco.jpg) repeat-x center top
+	&.porfiriana
+		background transparent url(./assets/images/textura-porfiriana.jpg) repeat-x center top
+	&.chiapas
+		background transparent url(./assets/images/textura-chiapas.jpg) repeat-x center top
+	
+h2.related-products
+	margin-top 30px
+.single_related
+	text-align center
+	margin 20px 0
+	img
+		width 70%
+		height auto
+		display inline-block
+.item-proyecto
+	display flex
+	flex-flow column
+	margin-bottom 30px
+	.info
+		background white
+		padding 20px 10px
+		text-align center
+		.logo
+			text-align center
+			img
+				width 30%
+				height auto
+				display inline-block
+	h2.title-project
+		color cafe
+	.image
+		width 100%
+		height 250px
+		display block
+		background-color cafe
+	.images-project-container
+		padding 0
+		margin 0
+		li
+			img
+				width 100%
+				height auto
+				display block
+		.slick-arrow
+			position absolute
+			top 40%
+			font-size 2em
+			border none
+			background none
+			color white
+			&:active
+			&:focus
+				outline none
+			&.slick-prev
+				left -10px
+				z-index 10
+			&.slick-next
+				right -10px
+.banner-coleccion
+	.item
+		width 100%
+		img
+			width 200px
+			height auto
+			display flex
+			margin 30px auto 0 auto
 @media screen and (min-width: 425px)
 	.categories-block
 		.category-item
@@ -486,7 +619,7 @@ h1.single-title
 		.nosotros-info
 			margin-top 0
 			padding 50px 160px 40px 40px
-			background white url(./assets/images/textura-general.png) repeat-x center 320px
+			background white url(./assets/images/textura-general.png) repeat-x center 625px
 			z-index 1
 		.right-image
 			margin-top -450px
@@ -689,6 +822,104 @@ h1.single-title
 		flex-flow row
 		align-items center
 		justify-content center
+	.product-all-stuff-container
+		margin-top 40px
+	.info-column
+		background-image none
+		margin-left -23px
+		background white
+		.product-info
+			background-color white
+			width 366px
+			margin-left -18px
+			position relative
+			z-index 1
+			padding-top 5px
+			article
+				padding 0px 30px 30px 30px
+		&.tradicional
+			background none
+			h1.single-title
+				position relative
+				z-index 2
+				margin-top 30px
+				&.tradicional
+					background-image url(./assets/images/textura-tradicional.jpg)
+					background-color none
+					background-repeat repeat-x
+					background-position center top
+		&.tequila
+			background none
+			h1.single-title
+				position relative
+				z-index 2
+				margin-top 30px
+				&.tequila
+					background-image url(./assets/images/textura-tequila.jpg)
+					background-color none
+					background-repeat repeat-x
+					background-position center top
+		&.porfiriana
+			background none
+			h1.single-title
+				position relative
+				z-index 2
+				margin-top 30px
+				&.porfiriana
+					background-image url(./assets/images/textura-porfiriana.jpg)
+					background-color none
+					background-repeat repeat-x
+					background-position center top
+		&.jalisco
+			background none
+			h1.single-title
+				position relative
+				z-index 2
+				margin-top 30px
+				&.jalisco
+					background-image url(./assets/images/textura-jalisco.jpg)
+					background-color none
+					background-repeat repeat-x
+					background-position center top
+		&.chiapas
+			background none
+			h1.single-title
+				position relative
+				z-index 2
+				margin-top 30px
+				&.chiapas
+					background-image url(./assets/images/textura-chiapas.jpg)
+					background-color none
+					background-repeat repeat-x
+					background-position center top
+		.product-gallery
+			background-color #E8D9C6
+			position relative
+			z-index 1
+	
+	.item-proyecto
+		flex-flow row
+		overflow hidden
+		width 100%
+		height 120px
+		overflow hidden
+		margin-bottom 0
+		.info
+			padding 0 10px
+			width 40%
+			height 120px
+			display flex
+			flex-flow column
+			justify-content center
+			align-items center
+			.logo
+				img
+					width 50%
+		h2.title-project
+			font-size 1.1em
+		.images-project-container
+			width 60%
+			display inline-block
 @media screen and (min-width: 992px)
 	.skip-link.screen-reader-text
 		display none
@@ -719,7 +950,7 @@ h1.single-title
 	.nosotros-first-block
 		margin 100px 0 60px 0
 	.nosotros-info
-		padding 20px 140px 40px 320px
+		padding 20px 50px 40px 270px
 		background-position center 45px
 		margin-top -490px
 		right 0
@@ -730,7 +961,7 @@ h1.single-title
 		margin 40px 0 80px 0
 		.nosotros-info
 			margin-top 0
-			padding 50px 260px 40px 90px
+			padding 50px 180px 40px 35px
 			z-index 1
 		.right-image
 			margin-top -450px
@@ -756,7 +987,29 @@ h1.single-title
 		padding 0 10%
 	.catalog-inner-block
 		padding 190px 140px 60px 80px
+	
+	.product-all-stuff-container
+		margin-top 60px
+	.info-column
+		.product-info
+			background-color white
+			width 450px
+			margin-left -15px
+			article
+				padding 0px 60px 30px 60px
+	.item-proyecto
+		margin-top 0px
+		height 160px
+		margin-bottom 0
+		.info
+			height 160px
+	.banner-coleccion
+		.item
+			img
+				margin 45px auto 0 auto
 @media screen and (min-width: 1200px)
+	.inner-banner-top
+		height 550px
 	.main-banners-container
 		height 600px
 		.item
@@ -784,11 +1037,12 @@ h1.single-title
 	.nosotros-first-block
 		margin 100px 0 60px 0
 	.nosotros-info
-		padding 20px 180px 40px 420px
+		padding 40px 40px 40px 315px
 	.nosotros-second-block
 		margin 40px 0 80px 0
 		.nosotros-info
-			padding 50px 360px 40px 140px
+			padding 50px 220px 40px 40px
+			background-position center 560px
 	.address-container
 		background-size 450px
 		background-position center -80px
@@ -818,6 +1072,30 @@ h1.single-title
 		z-index 1
 	.catalog-inner-block
 		padding 190px 180px 60px 120px
+	
+	.product-all-stuff-container
+		margin-top 60px
+	.info-column
+		.product-info
+			background-color white
+			width 540px
+	.item-proyecto
+		height 225px
+		.info
+			width 30%
+			height 225px
+			.logo
+				margin-bottom 10px
+				img
+					width 90%
+		h2.title-project
+			font-size 1.4em
+		.images-project-container
+			width 70%
+	.banner-coleccion
+		.item
+			img
+				width 300px
 @media screen and (min-width: 1400px)
 	.address-container
 		background-size 550px
@@ -843,3 +1121,4 @@ h1.single-title
 	.address-container
 		background-size cover
 		background-position center -250px
+		

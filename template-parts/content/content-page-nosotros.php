@@ -42,7 +42,7 @@
 		<div class="row nosotros-second-block">
 			
 			<div class="col-xs-12 col-md-10 mr-auto nosotros-info">
-				<?php the_content(); ?>
+				<?php the_field('texto_complementario'); ?>
 				<h2>La belleza y magia de méxico hecha a tu medida</h2>
 			</div>
 

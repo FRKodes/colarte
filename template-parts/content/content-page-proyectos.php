@@ -44,5 +44,44 @@
 		</div>
 	</div>
 
+	<div class="container m-top-40">
+		<div class="row">
+			<?php 
+			$args = array( 'post_type' => 'proyecto', 'posts_per_page' => 12 );
+			$loop = new WP_Query( $args );
+			while ( $loop->have_posts() ) : $loop->the_post();
+				?>
+				<div class="col-xs-12 col-md-6 m-bottom-40">
+					<div class="item-proyecto">
+						<div class="info">
+							<?php if (get_the_post_thumbnail()) { ?>
+								<div class="logo"><?php the_post_thumbnail(); ?></div>
+							<?php } ?>
+							<a href="<?php the_permalink(); ?>" class="">
+								<h2 class="title title-project"><?php the_title(); ?></h2>
+							</a>
+						</div>
+						
+						<?php
+							$project_images = get_field('galeria_proyecto');
+							if( $project_images ): ?>
+								<ul class="images-project-container">
+									<?php foreach( $project_images as $image ): ?>
+										<li>
+											<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+										</li>
+									<?php endforeach; ?>
+								</ul>
+							<?php endif; ?>
+
+					</div>
+				</div>
+				<?php 
+			endwhile;  ?>
+			
+		</div>
+
+	</div>
+
 
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -38,22 +38,27 @@
 							<?php the_content(); ?>
 						</div>
 						<div class="col-xs-12 col-md-6 mr-auto form">
-							<form action="">
+							<form action="/sendmail" method="post" id="contactForm">
 								<div class="form-group">
-									<input type="text" name="" class="form-control" placeholder="Nombre" data-validate="required">
+									<input type="text" name="nombre" class="form-control" placeholder="Nombre" data-validate="required">
 								</div>
 								<div class="form-group flex">
-									<input type="text" name="" class="form-control fifty" placeholder="Email" data-validate="required|email">
-									<input type="text" name="" class="form-control fifty phone" placeholder="Teléfono">
+									<input type="text" name="email" class="form-control fifty" placeholder="Email" data-validate="required|email">
+									<input type="text" name="tel" class="form-control fifty phone" placeholder="Teléfono">
 								</div>
 								<div class="form-group">
-									<textarea name="mensaje" id="mensaje" placeholder="Mensaje" cols="30" rows="10" class="form-control"></textarea>
+									<textarea name="mensaje" id="mensaje" placeholder="Mensaje" cols="30" rows="10" class="form-control" data-validate="required" ></textarea>
 								</div>
 								<div class="form-group radio">
-									<input type="radio" class="form-control"> Me quiero suscribir al newsletter
+									<input type="checkbox" name="newsletter" checked="" class="form-control"> Me quiero suscribir al newsletter
 								</div>
+								<div class="form-group text-danger text-right">Todos los campos son obligatorios.</div>
 								<div class="form-group">
-									<input type="text" class="btn btn-primary send-btn ml-auto" value="ENVIAR">
+									<input type="submit" class="btn btn-primary send-btn ml-auto" value="ENVIAR">
+								</div>
+								<div class="sent_mail_alert">
+									<h3>¡Gracias!</h3><br>
+									Tu mensaje se ha enviado correctamente, nos pondremos en contacto contigo a la brevedad.
 								</div>
 							</form>
 						</div>
