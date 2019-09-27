@@ -2,6 +2,8 @@ fondo = #e8d9c6
 footer = #f2ebe1
 cafe = #614e40
 
+#respond
+	display none
 .bold
 	font-weight 700
 .cafe
@@ -14,10 +16,6 @@ cafe = #614e40
 	margin-top 40px
 .m-top-80
 	margin-top 80px
-.m-bottom--30
-	margin-bottom -30px !important
-.m-bottom-330
-	margin-bottom 330px !important
 .m-bottom-20
 	margin-top 20px
 .m-bottom-40
@@ -146,10 +144,14 @@ p.intro
 			position absolute
 			width 100%
 			top 30px
+			margin-top 25px
+			h2 a
+				text-shadow 3px 3px 5px rgba(0,0,0,1)
 			a
 				color white
 			.icon-mas
 				font-size 1.8em
+				display none
 		.link-btn-mas
 		.block-desc
 			display none
@@ -194,6 +196,7 @@ p.intro
 		text-shadow 3px 3px 5px rgba(0,0,0,1)
 	&.blog
 		background-image url(./assets/images/banner-blog.jpg)
+		text-align center
 .left-image
 	background purple url(./assets/images/nosotros-expertos.jpg) no-repeat center center
 	background-size cover
@@ -380,6 +383,7 @@ h1.single-title
 			color white
 			padding 6px 16px
 .product-item-grid
+	margin-bottom 40px
 	.entry-header
 		a
 			display flex
@@ -559,7 +563,7 @@ h2.related-products
 			.cat-banner
 				height 200px
 			.cat-info
-				top 75px
+				margin-top 65px
 @media screen and (min-width: 557px)
 	.main-banners-container
 		height 300px
@@ -583,6 +587,10 @@ h2.related-products
 	.left-image
 		height 360px
 @media screen and (min-width: 768px)
+	.m-bottom--30
+		margin-bottom -30px !important
+	.m-bottom-330
+		margin-bottom 330px !important
 	.main-banners-container
 		height 450px
 		.item
@@ -685,6 +693,7 @@ h2.related-products
 				right 0
 				top -50px
 				z-index 0
+				margin-top 0
 				&.chiapas
 					background white url(./assets/images/textura-chiapas.jpg) repeat-x center 25px
 				&.tequila
@@ -703,6 +712,7 @@ h2.related-products
 					h2
 						a
 							color white
+							text-shadow none
 				.link-btn-mas
 					color white
 					background cafe
@@ -712,6 +722,7 @@ h2.related-products
 				h2
 					a
 						color cafe
+						text-shadow none
 			.link-icon-mas
 				display none
 			.block-desc

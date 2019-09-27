@@ -57,9 +57,7 @@
 							<?php if (get_the_post_thumbnail()) { ?>
 								<div class="logo"><?php the_post_thumbnail(); ?></div>
 							<?php } ?>
-							<a href="<?php the_permalink(); ?>" class="">
-								<h2 class="title title-project"><?php the_title(); ?></h2>
-							</a>
+							<h2 class="title title-project"><?php the_title(); ?></h2>
 						</div>
 						
 						<?php

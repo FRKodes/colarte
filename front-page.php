@@ -46,36 +46,35 @@ get_header();
 					<div class="category-item">
 						<div class="cat-banner catalogo"></div>
 						<div class="cat-info">
-							<h2><a href="#">Catálogo</a></h2>
-							<a class="link-icon-mas" href="#"><span class="icon-mas"></span></a>
+							<h2><a href="/catalogo">Catálogo</a></h2>
+							<a class="link-icon-mas" href="/catalogo"><span class="icon-mas"></span></a>
 							<p class="block-desc">Contamos con distintas líneas de producto, cada una de ellas con una identidad bien definida.</p>
-							<a class="link-btn-mas" href="#">Ver más</a>
+							<a class="link-btn-mas" href="/catalogo">Ver más</a>
 						</div>
 					</div>
 					
 					<div class="category-item proyectos-item">
 						<div class="cat-banner proyectos"></div>
 						<div class="cat-info">
-							<h2><a href="#">Proyectos</a></h2>
-							<a class="link-icon-mas" href="#"><span class="icon-mas"></span></a>
+							<h2><a href="/proyectos">Proyectos</a></h2>
+							<a class="link-icon-mas" href="/proyectos"><span class="icon-mas"></span></a>
 							<p class="block-desc">Desarrollamos proyectos a la medida de las necesidades de nuestros clientes, convierte tu restaurant un pedacito de México.</p>
-							<a class="link-btn-mas" href="#">Ver más</a>
+							<a class="link-btn-mas" href="/proyectos">Ver más</a>
 						</div>
 					</div>
 					
 					<div class="category-item">
 						<div class="cat-banner blog"></div>
 						<div class="cat-info">
-							<h2><a href="#">Blog</a></h2>
-							<a class="link-icon-mas" href="#"><span class="icon-mas"></span></a>
+							<h2><a href="/blog">Blog</a></h2>
+							<a class="link-icon-mas" href="/blog"><span class="icon-mas"></span></a>
 							<p class="block-desc">Conoce más acerca de nuestro trabajo, es un placer contarte nuestras historias del día a día.</p>
-							<a class="link-btn-mas" href="#">Ver más</a>
+							<a class="link-btn-mas" href="/blog">Ver más</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
 
 		<div class="container">
 			<div class="row">
