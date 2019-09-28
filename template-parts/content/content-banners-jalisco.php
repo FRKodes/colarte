@@ -1,3 +1,3 @@
-<div class="item uno"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/producto-bancacarreta-1.png" alt="Producto línea jalisco"></div>
-<div class="item dos"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/producto-bancacarreta-1.png" alt="Producto línea jalisco"></div>
-<div class="item tres"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/producto-bancacarreta-1.png" alt="Producto línea jalisco"></div>
+<div class="item uno"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner-interior-jalisco-bancas.png" alt="Producto línea jalisco"></div>
+<div class="item dos"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner-interior-jalisco-bancas.png" alt="Producto línea jalisco"></div>
+<div class="item tres"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner-interior-jalisco-bancas.png" alt="Producto línea jalisco"></div>
