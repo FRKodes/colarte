@@ -56,3 +56,9 @@
 .icon-messenger:before {
   content: "\66";
 }
+.icon-ig:before {
+  content: "\67";
+}
+.icon-wa:before {
+  content: "\68";
+}

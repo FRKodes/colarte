@@ -28,24 +28,19 @@
 			<div class="row text-center middle-align">
 				
 				<div class="col-xs-12 col-md-4 col-footer">
+					<h4>CONTACTO</h4>
 					<p>
-						<b>Contacto:</b> <br>
 						<a href="mailto:auxiliarcolarte@outlook.com" target="_blank">auxiliarcolarte@outlook.com</a> <br>
-						<a href="mailto:moisesadrian13@outlook.com" target="_blank">moisesadrian13@outlook.com</a><br>
+						<a href="mailto:moisesadrian30@outlook.com" target="_blank">moisesadrian30@outlook.com</a><br>
 					</p>
 
 					<p>
-						Tel: +52 1 33 2256 7319<br>
-						Desde USA: 01 1521 33 1864 0767<br>
+						
+						<span class="icon-wa"></span> <a target="_blank" class="underline bold" href="https://api.whatsapp.com/send?phone=523318640767">+52 33 1864 0767</a><br>
+						<span class="icon-wa"></span> <a target="_blank" class="underline bold" href="https://api.whatsapp.com/send?phone=523322567319">+52 33 2256 7319</a><br>
+						Desde USA: 01 152 33 1864 0767<br>
 					</p>
 
-					<p>
-						<b>Domicilio:</b> <br>
-						Independencia #368-C <br>
-						Colonia Los Puestos <br>
-						Tlaquepaque Jalisco México. <br>
-						C.P. 45638
-					</p>
 				</div>
 
 				<div class="col-xs-12 col-md-4 col-footer">
@@ -66,15 +61,22 @@
 						<li><a href="https://www.facebook.com/MueblesColarteOficial/" target="_blank" title="Muebles Colarte en Facebook" class="icon-fb"></a></li>
 						<li><a href="mailto:moisesadrian30@outlook.com" target="_blank" title="Mándanes un correo" class="icon-mail"></a></li>
 						<li><a href="http://m.me/MueblesColarteOficial" target="_blank" title="Muebles Colarte en Messenger" class="icon-messenger"></a></li>
+						<li><a href="https://www.instagram.com/" target="_blank" title="Muebles Colarte en Messenger" class="icon-ig"></a></li>
 					</ul>
+					<p>
+						<b>Domicilio:</b> <br>
+						Independencia #368-C <br>
+						Colonia Los Puestos <br>
+						Tlaquepaque Jalisco México. <br>
+						C.P. 45638
+					</p>
 				</div>
 			</div>
 			
 			<div class="row text-center">
 				<div class="col-xs-12 col-md-12">
 					<p>
-						Visite nuestro: <br>
-						<a class="bold" href="#">Aviso de privacidad</a> | <a class="bold" href="#">Términos y condiciones de uso</a>
+						Visita nuestro <a class="bold" href="/politica-privacidad">Aviso de privacidad</a>
 					</p>
 				</div>
 			</div>
