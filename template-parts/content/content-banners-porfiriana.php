@@ -1,3 +1,3 @@
-<div class="item uno"></div>
-<div class="item dos"></div>
-<div class="item tres"></div>
+<div class="item uno"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/booth-arandas---linea-porfiriana.png" alt="Producto línea porfiriana"></div>
+<div class="item dos"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/booth-porfiriana-negro-con-rojo-linea-porfiriana.png" alt="Producto booth línea porfiriana"></div>
+<div class="item tres"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/silla-porfiriana-catrina-linea-porfiriana.png" alt="Producto silla catrina línea porfiriana"></div>

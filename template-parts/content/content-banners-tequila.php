@@ -1,2 +1,3 @@
-<div class="item uno"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner-interior-tequila-bancos.png" alt="Producto línea tequila"></div>
-<div class="item dos"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner-interior-tequila-sillas.png" alt="Producto línea tequila"></div>
+<div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner-interior-tequila-bancos.png" alt="Producto línea tequila bancos"></div>
+<div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner-interior-tequila-sillas.png" alt="Producto línea tequila sillas"></div>
+<div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/booth-tequila-linea-tequila.png" alt="Producto booth línea tequila"></div>

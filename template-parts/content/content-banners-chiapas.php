@@ -1,3 +1,3 @@
-<div class="item uno"></div>
-<div class="item dos"></div>
-<div class="item tres"></div>
+<div class="item uno"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banca-frutas-linea-chiapas.png" alt="Producto línea Chiapas"></div>
+<div class="item dos"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/booth-aves-linea-chiapas.png" alt="Producto línea Chiapas"></div>
+<div class="item tres"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/comedor-circular-guacamayas-linea-chiapas.png" alt="Producto comedor línea Chiapas"></div>
