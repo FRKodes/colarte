@@ -117,3 +117,12 @@ $('.banner-coleccion').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1
 });
+
+$('ul.images li a').on('click', function () {
+	console.log($(this).attr('data-link'));
+	$('.main-image img').attr('src', $(this).attr('data-link'));
+	$('.main-image img').attr('srcset', $(this).attr('data-link'));
+	
+});
+
+

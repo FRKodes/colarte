@@ -10,12 +10,12 @@ add_theme_support( 'post-thumbnails' );
 
 wp_deregister_script('jquery');
 
-wp_enqueue_style( 'theme-styles', get_template_directory_uri() . '/colarte-styles.css',false,'1.1','all');
+wp_enqueue_style( 'theme-styles', get_template_directory_uri() . '/colarte-styles.css',false,'1.2','all');
 
 // wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
 
 function enqueue_styles_and_script() {
-    wp_enqueue_script( 'custom-script', get_stylesheet_directory_uri() . '/all.js', null, '1.1', true );
+    wp_enqueue_script( 'custom-script', get_stylesheet_directory_uri() . '/all.js', null, '1.2', true );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_styles_and_script' );
 
