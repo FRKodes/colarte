@@ -34,6 +34,15 @@ get_header();
 					endwhile; // End of the loop.
 					?>
 				</div>
+
+				<div class="row m-bottom-80">
+					<div class="col-xs-12 col-md-8 col-lg-6 ml-auto mr-auto">
+						<div id="pagination" class="">
+							<?php posts_nav_link(); ?>
+						</div>
+					</div>
+				</div>
+
 			</div>
 
 		</main><!-- #main -->
