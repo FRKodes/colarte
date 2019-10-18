@@ -23,9 +23,8 @@ get_header();
 		<div class="container-fluid">
 			<div class="row">
 				<div class="main-banners-container">
-					<div class="item uno gray"></div>
-					<div class="item dos purple"></div>
-					<div class="item tres green"></div>
+					<div class="item uno"></div>
+					<div class="item dos"></div>
 				</div>
 			</div>
 		</div>
