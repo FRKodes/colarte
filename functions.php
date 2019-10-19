@@ -10,7 +10,7 @@ add_theme_support( 'post-thumbnails' );
 
 wp_deregister_script('jquery');
 
-wp_enqueue_style( 'theme-styles', get_template_directory_uri() . '/colarte-styles.css',false,'1.2','all');
+wp_enqueue_style( 'theme-styles', get_template_directory_uri() . '/colarte-styles.css',false,'1.3','all');
 
 // wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
 
