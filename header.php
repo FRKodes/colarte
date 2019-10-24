@@ -15,9 +15,18 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Fabricamos piezas auténticas que reflejan la cultura y tradiciones mexicanas para llevarlas mas allá de nuestras fronteras. Nos enfocamos en brindar a nuestros clientes honestidad, responsabilidad, confianza, y amistad con cada uno ya que para nosotros antes de ser nuestro cliente es nuestro amigo y parte de esta gran familia MUEBLES COLARTE." />
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
 	<link href="https://fonts.googleapis.com/css?family=Alegreya:500,700&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-84802922-25"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-84802922-25');
+	</script>
 </head>
 
 <body <?php body_class(); ?>>
