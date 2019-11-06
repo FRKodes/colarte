@@ -61,7 +61,7 @@
 						<li><a href="https://www.facebook.com/MueblesColarteOficial/" target="_blank" title="Muebles Colarte en Facebook" class="icon-fb"></a></li>
 						<li><a href="mailto:moisesadrian30@outlook.com" target="_blank" title="Mándanes un correo" class="icon-mail"></a></li>
 						<li><a href="http://m.me/MueblesColarteOficial" target="_blank" title="Muebles Colarte en Messenger" class="icon-messenger"></a></li>
-						<li><a href="https://www.instagram.com/muebles.colarte/" target="_blank" title="Muebles Colarte en Messenger" class="icon-ig"></a></li>
+						<li><a href="https://www.instagram.com/mueblescolarteoficial/" target="_blank" title="Muebles Colarte en Messenger" class="icon-ig"></a></li>
 					</ul>
 					<p>
 						<b>Domicilio:</b> <br>
