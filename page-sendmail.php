@@ -17,7 +17,8 @@ if (isset($_POST['email']) && $_POST['email'] != "") {
     
     // $mail->addAddress('tony@blueterrier.mx', 'Mail Muebles Colarte');
     $mail->addAddress('moisesadrian30@outlook.com', 'Mail Muebles Colarte');
-    $mail->addReplyTo("contacto@mueblescolarte.com.mx", "Reply");
+    $mail->addReplyTo("contacto@mueblescolarte.com", "Reply");
+    $mail->addCC("auxiliarcolarte@outlook.com");
     $mail->addBCC("tony@blueterrier.mx");
     $mail->isHTML(true);
     $mail->Subject = "Contacto Muebles Colarte";
