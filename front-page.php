@@ -25,6 +25,7 @@ get_header();
 				<div class="main-banners-container">
 					<div class="item uno"></div>
 					<div class="item dos"></div>
+					<div class="item tres"></div>
 				</div>
 			</div>
 		</div>
